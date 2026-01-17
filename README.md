@@ -9,5 +9,3 @@ to reach a target percentage.
 - Mobile-friendly
 - No login required
 
-### Live Demo
-(Enable GitHub Pages and paste link here)
