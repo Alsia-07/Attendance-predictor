@@ -14,8 +14,14 @@ function calculate() {
   let x = Math.ceil(((p * total) - attended) / (1 - p));
   if (x < 0) x = 0;
 
+  let skip = Math.floor((attended / p) - total);
+  if (skip < 0) skip = 0;
+
   document.getElementById("result").innerHTML = `
-    <p>Current Attendance: <b>${current}%</b></p>
-    <p>You must attend the next <b>${x}</b> hours continuously.</p>
-  `;
+  <p>Current Attendance: <b>${current}%</b></p>
+  <p>You must attend the next <b>${x}</b> hours continuously.</p>
+  <p>You can safely skip <b>${skip}</b> hours.</p>
+`;
+
+  
 }
