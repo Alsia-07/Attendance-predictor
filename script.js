@@ -16,6 +16,6 @@ function calculate() {
 
   document.getElementById("result").innerHTML = `
     <p>Current Attendance: <b>${current}%</b></p>
-    <p>You must attend the next <b>${x}</b> classes continuously.</p>
+    <p>You must attend the next <b>${x}</b> hours continuously.</p>
   `;
 }
